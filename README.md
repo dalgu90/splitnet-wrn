@@ -2,6 +2,8 @@
 
 TensorFlow implementation of SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization, ICML 2017
 
+ - Juyong Kim\*(SNU), Yookoon Park\*(SNU), Gunhee Kim(SNU), and Sung Ju Hwang(UNIST) (*: Equal contributions)
+
 <b>Prerequisite</b>
 
 1. TensorFlow
