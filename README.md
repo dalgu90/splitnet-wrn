@@ -1,6 +1,8 @@
 # splitnet-wrn
 
 TensorFlow implementation of SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization, ICML 2017
+ 
+![SplitNet Concept](https://user-images.githubusercontent.com/13655756/27619160-8537abb6-5bfb-11e7-8854-2b5ee8be2312.png)
 
  - Juyong Kim\*(SNU), Yookoon Park\*(SNU), Gunhee Kim(SNU), and Sung Ju Hwang(UNIST) (*: Equal contributions)
 
