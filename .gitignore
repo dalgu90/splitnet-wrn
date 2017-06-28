@@ -54,6 +54,7 @@
 # CIFAR-100 dataset
 cifar100*
 cifar-100-binary*
+!cifar100.py
 
 # Training & evaluation shell files
 *.sh
