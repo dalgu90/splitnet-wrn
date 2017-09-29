@@ -304,11 +304,11 @@ def train():
                         img_summaries.append(img_to_summary(np.repeat(split_p2[:, feature_indices1], 20, axis=0), 'split_p2'))
                         img_summaries.append(img_to_summary(np.repeat(split_r21[:, feature_indices3], 20, axis=0), 'split_r21'))
                         img_summaries.append(img_to_summary(np.repeat(split_r22[:, feature_indices4], 20, axis=0), 'split_r22'))
-                        img_summaries.append(img_to_summary(unit_3_0_shortcut_img, 'unit_3_0/shortcut'))
-                        img_summaries.append(img_to_summary(unit_3_0_conv_1_img, 'unit_3_0/conv_1'))
-                        img_summaries.append(img_to_summary(unit_3_0_conv_2_img, 'unit_3_0/conv_2'))
-                        img_summaries.append(img_to_summary(unit_3_1_conv_1_img, 'unit_3_1/conv_1'))
-                        img_summaries.append(img_to_summary(unit_3_1_conv_2_img, 'unit_3_1/conv_2'))
+                        img_summaries.append(img_to_summary(unit_3_0_shortcut_img, 'unit_3_0/shortcut_kernel'))
+                        img_summaries.append(img_to_summary(unit_3_0_conv_1_img, 'unit_3_0/conv_1_kernel'))
+                        img_summaries.append(img_to_summary(unit_3_0_conv_2_img, 'unit_3_0/conv_2_kernel'))
+                        img_summaries.append(img_to_summary(unit_3_1_conv_1_img, 'unit_3_1/conv_1_kernel'))
+                        img_summaries.append(img_to_summary(unit_3_1_conv_2_img, 'unit_3_1/conv_2_kernel'))
 
                     if FLAGS.ngroups3 > 1:
                         unit_2_0_shortcut = get_var_value('unit_2_0/shortcut/kernel', sess)
@@ -332,11 +332,11 @@ def train():
                         img_summaries.append(img_to_summary(np.repeat(split_p3[:, feature_indices1], 20, axis=0), 'split_p3'))
                         img_summaries.append(img_to_summary(np.repeat(split_r31[:, feature_indices3], 20, axis=0), 'split_r31'))
                         img_summaries.append(img_to_summary(np.repeat(split_r32[:, feature_indices4], 20, axis=0), 'split_r32'))
-                        img_summaries.append(img_to_summary(unit_2_0_shortcut_img, 'unit_2_0/shortcut'))
-                        img_summaries.append(img_to_summary(unit_2_0_conv_1_img, 'unit_2_0/conv_1'))
-                        img_summaries.append(img_to_summary(unit_2_0_conv_2_img, 'unit_2_0/conv_2'))
-                        img_summaries.append(img_to_summary(unit_2_1_conv_1_img, 'unit_2_1/conv_1'))
-                        img_summaries.append(img_to_summary(unit_2_1_conv_2_img, 'unit_2_1/conv_2'))
+                        img_summaries.append(img_to_summary(unit_2_0_shortcut_img, 'unit_2_0/shortcut_kernel'))
+                        img_summaries.append(img_to_summary(unit_2_0_conv_1_img, 'unit_2_0/conv_1_kernel'))
+                        img_summaries.append(img_to_summary(unit_2_0_conv_2_img, 'unit_2_0/conv_2_kernel'))
+                        img_summaries.append(img_to_summary(unit_2_1_conv_1_img, 'unit_2_1/conv_1_kernel'))
+                        img_summaries.append(img_to_summary(unit_2_1_conv_2_img, 'unit_2_1/conv_2_kernel'))
 
                     if img_summaries:  # If not empty
                         img_summary = tf.Summary(value=img_summaries)
